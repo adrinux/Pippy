@@ -3,19 +3,15 @@
 
 name = "Pippy"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
-homepage = "http://example.com/"
+licenselink = "https://github.com/adrinux/Pippy/blob/master/LICENSE"
+description = "A Hugo theme based on HTML5boilerplate and using hugo pipes"
+homepage = "https://github.com/adrinux/Pippy"
 tags = []
 features = []
 min_version = "0.41"
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Adrian Simmons"
+  homepage = "https://perlucida.com"
 
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+
