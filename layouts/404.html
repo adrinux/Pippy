@@ -1,25 +1,24 @@
 <!doctype html>
 <html class="no-js" lang="{{ .Site.LanguageCode}}">
-  <head>
-    {{ partial "head-meta.html" . }}
-  </head>
-  <body>
-    <!--[if lte IE 9]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-    <![endif]-->
+<head>
+  {{ partial "head-meta.html" . }}
+</head>
+<body>
 
-    {{ partial "header.html" . }}
-    
-    <div class="main-content">
-      <h1>Page Not Found</h1>
-      <p>Sorry, but the page you were trying to view does not exist.</p>
-    </div>
+  {{ partial "browserupgrade.html" . }}
 
-    {{ partial "footer.html" . }}
+  {{ partial "header.html" . }}
 
-    {{ partial "footer-scripts.html" . }}
+  <div class="main-content">
+    <h1>Page Not Found</h1>
+    <p>Sorry, but the page you were trying to view does not exist.</p>
+  </div>
 
-    {{ partial "google-analytics.html" . }}
+  {{ partial "footer.html" . }}
 
-  </body>
+  {{ partial "footer-scripts.html" . }}
+
+  {{ partial "google-analytics.html" . }}
+
+</body>
 </html>

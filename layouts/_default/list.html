@@ -1,30 +1,31 @@
 <!doctype html>
 <html class="no-js" lang="{{ .Site.LanguageCode}}">
-  <head>
-    {{ partial "head-meta.html" . }}
-  </head>
-  <body>
-    <!--[if lte IE 9]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-    <![endif]-->
+<head>
+  {{ partial "head-meta.html" . }}
+</head>
+<body>
 
-    {{ partial "header.html" . }}
+  {{ partial "browserupgrade.html" . }}
 
-    <div class="main-content">
+  {{ partial "header.html" . }}
 
-      <h1>{{ .Title }}</h1>
+  <div class="main-content">
 
-      <ul>
-        {{ range .Data.Pages }}
-        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-        {{ end }}
-      </ul>
+    <h1>{{ .Title }}</h1>
 
-    </div>
+    <ul>
+      {{ range .Data.Pages }}
+      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+
+  </div>
 
   {{ partial "footer.html" . }}
 
   {{ partial "footer-scripts.html" . }}
 
-  </body>
+  {{ partial "google-analytics.html" . }}
+
+</body>
 </html>
