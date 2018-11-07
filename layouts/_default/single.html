@@ -1,32 +1,13 @@
-<!doctype html>
-<html class="no-js" lang="{{ .Site.LanguageCode}}">
-  <head>
-    {{ partial "head-meta.html" . }}
-  </head>
-  <body>
+{{ define "main" }}
+<div class="main-content">
+  <h1>{{ .Title }}</h1>
 
-  {{ partial "browserupgrade.html" . }}
+  {{ if .Params.rendertoc }}
+  {{ .TableOfContents }}
+  {{ end }}
 
-  {{ partial "header.html" . }}
-
-    <div class="main-content">
-
-      <h1>{{ .Title }}</h1>
-
-      {{ if .Params.rendertoc }}
-      {{ .TableOfContents }}
-      {{ end }}
-
-      <article>
-        {{ .Content }}
-      </article>
-    </div>
-
-  {{ partial "footer.html" . }}
-
-  {{ partial "footer-scripts.html" . }}
-
-  {{ partial "google-analytics.html" . }}
-
-  </body>
-</html>
+  <article>
+    {{ .Content }}
+  </article>
+</div>
+{{ end }}

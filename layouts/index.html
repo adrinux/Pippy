@@ -1,13 +1,13 @@
 <!doctype html>
 <html class="no-js" lang="{{ .Site.LanguageCode}}">
 <head>
-  {{ partial "head-meta.html" . }}
+  {{- partial "head-meta.html" . -}}
 </head>
 <body>
 
-  {{ partial "browserupgrade.html" . }}
+  {{- partial "browserupgrade.html" . -}}
 
-  {{ partial "header.html" . }}
+  {{- partial "header.html" . -}}
 
   <div class="main-content">
     <h1>Hello world!</h1>
@@ -15,11 +15,11 @@
     <p>Edit this file in <code>themes/layouts/index.html</code>.</p>
   </div>
 
-  {{ partial "footer.html" . }}
+  {{- partial "footer.html" . -}}
 
-  {{ partial "footer-scripts.html" . }}
+  {{- partial "footer-scripts.html" . -}}
 
-  {{ partial "google-analytics.html" . }}
+  {{- partial "google-analytics.html" . -}}
 
 </body>
 </html>

@@ -1,31 +1,10 @@
-<!doctype html>
-<html class="no-js" lang="{{ .Site.LanguageCode}}">
-<head>
-  {{ partial "head-meta.html" . }}
-</head>
-<body>
-
-  {{ partial "browserupgrade.html" . }}
-
-  {{ partial "header.html" . }}
-
-  <div class="main-content">
-
-    <h1>{{ .Title }}</h1>
-
-    <ul>
-      {{ range .Data.Pages }}
-      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-      {{ end }}
-    </ul>
-
-  </div>
-
-  {{ partial "footer.html" . }}
-
-  {{ partial "footer-scripts.html" . }}
-
-  {{ partial "google-analytics.html" . }}
-
-</body>
-</html>
+{{ define "main" }}
+<div class="main-content">
+<h1>{{ .Title }}</h1>
+  <ul>
+    {{ range .Data.Pages }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
