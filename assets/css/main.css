@@ -1,6 +1,5 @@
-/* Need to include vars - can hugo do it via concat?
+@include 'normalize.css';
 @include 'vars.css';
-*/
 
 /*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 
