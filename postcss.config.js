@@ -1,7 +1,7 @@
 
 module.exports = {
   plugins: [
-    require('postcss-import'),
+    require('postcss-import')({ path: 'themes/pippy/assets/css' }),
     require('postcss-preset-env')({
       /* use stage 2 rules */
       stage: 2,
