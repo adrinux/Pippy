@@ -1,5 +1,5 @@
-@include 'normalize.css';
-@include 'vars.css';
+@import 'normalize.css';
+@import 'vars.css';
 
 /*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 
@@ -106,17 +106,17 @@ body {
 header {
   background-color: var(--text);
   color: var(--background);
-  padding: 1em;
+  padding: 1.5em;
 }
 
 .main-content {
-  padding: 1em;
+  padding: 2em;
 }
 
 footer {
   background-color: var(--text);
   color: var(--background);
-  padding: 1em;
+  padding: 2em;
 }
 
 /* ==========================================================================
