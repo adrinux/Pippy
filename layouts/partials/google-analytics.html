@@ -1,7 +1,8 @@
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<!-- Google Analytics: set GoogleAnalytics in Hugo site config to your site's ID. -->
+{{ with .Site.Params.GoogleAnalytics }}
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+    ga('create', '{{ . }}', 'auto'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-  
+{{ end }}

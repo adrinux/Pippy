@@ -13,7 +13,9 @@
   {{- partial "footer.html" . -}}
 
   {{- partial "footer-scripts.html" . -}}
-
-  {{- partial "google-analytics.html" . -}}
+  
+  {{ if ( isset .Site.Params "googleanalytics" ) }}
+    {{- partial "google-analytics.html" . -}}
+  {{ end }}
 </body>
 </html>
